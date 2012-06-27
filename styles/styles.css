@@ -406,3 +406,22 @@ ul.secondary-menu {
 .new-block-row {
   clear: both;
 }
+body.front .ui-accordion-content .block-menu
+{
+position: static !important;
+left: 0px !important;
+}
+body.front .ui-accordion-content
+{
+overflow: hidden;
+}
+#block-quicktabs-administrative-departments
+{
+	margin-bottom:0px !important;
+	float:left;
+	position: static !important;
+}
+body.front .ui-accordion-content .block-menu li a:hover
+{
+color:#990000;
+}
