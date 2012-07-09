@@ -425,3 +425,7 @@ body.front .ui-accordion-content .block-menu li a:hover
 {
 color:#990000;
 }
+#block-menu-menu-quick-links
+{
+top:0px !important;
+}
