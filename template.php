@@ -28,26 +28,3 @@ function cuadmin_preprocess_html(&$vars) {
 }
 
 
-function cuadmin_preprocess_block(&$vars) {
-  if (theme_get_setting('footer_menu_columns')) {
-    $footer_menu_columns = theme_get_setting('footer_menu_columns');
-  }
-  else {
-    $after_content_columns = 1;
-  }
-  
-  $block_counter = &drupal_static(__FUNCTION__, array());
-  $vars['block'] = $vars['elements']['#block'];
-  // All blocks get an independent counter for each region.
-  if (!isset($block_counter[$vars['block']->region])) {
-    $block_counter[$vars['block']->region] = -1;
-  }
-
-  switch ($vars['block']->region) {
-    case 'footer_menus':
-      $vars['classes_array'][] = 'grid-' . 12/$footer_menu_columns;
-      $vars['classes_array'][] = ($block_counter[$vars['block']->region] % ($footer_menu_columns)) ? '' : 'new-block-row';
-      $vars['mycounter'] = $block_counter[$vars['block']->region];
-      break;
-    }
-}

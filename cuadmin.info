@@ -13,8 +13,7 @@ base theme = cu_bootstrap
 ; Theme specific styles. Any sub-themes should override this.
 stylesheets[all][] = styles/styles.css
 
-scripts[] = js/jquery.masonry.min.js
-scripts[] = js/site.js
+
 
 
 
@@ -24,7 +23,6 @@ regions[slider]         = Slider
 regions[help]           = Help
 regions[pre_content]    = Pre Content
 regions[content]        = Content
-regions[post_content]   = Post Content
 regions[sidebar_first]  = Left sidebar
 regions[sidebar_second] = Right sidebar
 regions[after_content]  = After Content

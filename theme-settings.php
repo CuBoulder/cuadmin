@@ -25,18 +25,3 @@ $form['cuadmin_theme_settings'] = array(
   );		
 	
 
-$form['cuadmin_theme_settings']['columns'] = array(
-		'#type' => 'fieldset', 
-		'#title' => t('Column Options'), 
-		'#collapsible' => TRUE, 
-		'#collapsed' => TRUE,
-	);
-	
-	$form['cuadmin_theme_settings']['columns']['footer_menu_columns'] = array(
-	'#type' => 'radios', 
-	'#title' => t('Footer Menu Columns'), 
-	'#default_value' => theme_get_setting('footer_menu_columns', $theme) ? theme_get_setting('footer_menu_columns', $theme) : '3', 
-	'#description' => t('Pick how many columns for footer menu blocks.'),
-	'#options' => array('6' => t('6'),'4' => t('4'),'3' => t('3'), '2' => t('2'), '1' => t('1')),
-	);
-}
