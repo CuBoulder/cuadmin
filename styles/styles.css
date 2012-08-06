@@ -430,3 +430,23 @@ color:#990000;
 {
 top:0px !important;
 }
+
+
+.ui-accordion .ui-accordion-header {
+  font-size: 100%;
+  margin:0 !important;
+}
+.ui-accordion .ui-accordion-header a {
+  padding:5px;
+}
+
+.sidebar .ui-accordion ul.menu {
+  font-size: 100%;
+}
+.sidebar .ui-accordion .block {
+  margin:0;
+}
+.sidebar .ui-accordion  .ui-accordion-content {
+  padding:0 10px;
+  font-size: 85%;
+}
