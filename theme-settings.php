@@ -23,5 +23,4 @@ $form['cuadmin_theme_settings'] = array(
     '#options' => array('banner-white' => t('White'), 'banner-light' => t('Light Grey'), 'banner-dark' => t('Dark Grey'), 'banner-black' => t('Black')),
     '#group' => 'cuadmin_theme_settings'
   );		
-	
-
+}
