@@ -82,7 +82,7 @@
       
         <?php if(!empty($page['slider'])): ?>
           <div id="slider-wrapper">
-            <div id="slider" class="container-12 clearfix">
+            <div id="slider" class="clearfix">
               <div class="grid-12">
                 <?php print render($page['slider']); ?>
               </div>
