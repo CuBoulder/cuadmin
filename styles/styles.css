@@ -450,3 +450,8 @@ top:0px !important;
   padding:0 10px;
   font-size: 85%;
 }
+
+fieldset {
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+}
